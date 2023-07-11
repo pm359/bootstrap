@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #5de6de, #b58ecc);
+        background-color: linear-gradient(to bottom, red, blue);
+      }
+.main{
+    width: 400px;
+    height:550px;
+    background: rgb(255, 0, 149);
+    border-radius: 10px;
+    box-shadow: 5px,20px,50px black;
+    overflow: hidden;
+    top: 25%;
+    left: 25%;
+    position: relative;
+}
+.signup:{
+    position: static;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+label{
+    color: white;
+    margin: 40px auto;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    color: purple;
+
+}
+input{
+    display: flex;
+    height: 25px auto;
+    margin: 25px; 
+    justify-content: center;
+    padding: 15px auto;
+    border: none;
+    border-radius: 5px;
+
+    display: flex;
+    
+}
+button{
+
+
+    justify-content: center;
+    width: 50%;
+    margin: 10px;
+    display: 50px;
+    display: block;
+    font-size: 15px;
+    
+
+}
+button:hover{
+    color: red;
+    background-color: black;
+}
+
+.login:hover{
+    height: 330px;
+
+
+    transform: translateY(-150px);
+    transition: 0.8s ease-in-out;
+
+
+}
+.login{
+    margin-top: 100px;;
+    border-radius: 170% /30%;
+    align-items: center;
+    background:yellow;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login label{
+    margin: 10px !important;
+    padding-top: 10px !important;
+    color: #b58ecc;
+    transform: scale(.5);
+
+    
+}
+
+#chk{
+    display: none;
+}
+
+#chk:checked ~ .login{
+    transform: translateY(-200px);
+}
+#chk:checked~.login label{
+    transform: scale(1);
+
+}
+#chk:checked~.signup label{
+    transform: scale(.9);
+}
+
+
+      
+
